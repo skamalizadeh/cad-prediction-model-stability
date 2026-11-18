@@ -1,0 +1,25 @@
+# Python packages used by the analysis pipeline (direct dependencies only).
+# Versions are those with which the reported results were produced.
+# Requires Python 3.11 or newer (numpy 2.4).
+#
+# Install:  python -m pip install -r requirements.txt
+#
+# Exact library versions matter here: XGBoost and pyGAM fits and the
+# grid-search choices among near-tied configurations can differ across
+# library versions and across operating systems/CPUs. 00_run_all.py warns if the installed versions differ
+# and saves the full environment to outputs/environment_report.txt.
+
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.16.3
+scikit-learn==1.8.0
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+catboost==1.2.10
+pygam==0.12.0
+shap==0.52.0
+Boruta==0.4.3
+statsmodels==0.15.0
+matplotlib==3.11.1
+joblib==1.6.0
+openpyxl==3.1.5
